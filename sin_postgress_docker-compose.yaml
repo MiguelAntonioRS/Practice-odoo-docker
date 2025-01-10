@@ -1,0 +1,19 @@
+version: '3'
+services:
+  web:
+    container_name: ${WEB_HOST}
+    image: ${WEB_IMAGE_NAME}
+    ports:
+      - "${WEB_PORT}:8069"
+      - "${WEBSOCKET_PORT}:8072"
+    volumes:
+      - odoo-web-data:/var/lib/odoo
+      - ./config:/etc/odoo
+      - ./addons:/mnt/extra-addons
+    entrypoint: "/usr/bin/odoo -c /etc/odoo/odoo.conf"
+networks:
+  default:
+    external:
+      name: ${NETWORK_NAME}
+volumes:
+  odoo-web-data:
