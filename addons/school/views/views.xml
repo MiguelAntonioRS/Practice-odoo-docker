@@ -1,28 +1,26 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="school.list">
-      <field name="name">school list</field>
-      <field name="model">school.school</field>
+
+    <record model="ir.ui.view" id="school.profesor_list">
+      <field name="name">school profesor list</field>
+      <field name="model">school.profesor</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="school.action_window">
-      <field name="name">school window</field>
-      <field name="res_model">school.school</field>
+
+    <record model="ir.actions.act_window" id="school.profesor_action_window">
+      <field name="name">school profesor window</field>
+      <field name="res_model">school.profesor</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
 <!--
@@ -41,19 +39,19 @@
 -->
 
     <!-- Top menu item -->
-<!--
+
     <menuitem name="school" id="school.menu_root"/>
--->
+
     <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="school.menu_1" parent="school.menu_root"/>
-    <menuitem name="Menu 2" id="school.menu_2" parent="school.menu_root"/>
+
+    <menuitem name="school" id="school.profesor_menu_1" parent="school.menu_root"/>
+<!--    <menuitem name="Menu 2" id="school.menu_2" parent="school.menu_root"/>
 -->
     <!-- actions -->
-<!--
-    <menuitem name="List" id="school.menu_1_list" parent="school.menu_1"
-              action="school.action_window"/>
-    <menuitem name="Server to list" id="school" parent="school.menu_2"
+
+    <menuitem name="Profesor" id="school.profesor_menu_1_list" parent="school.profesor_menu_1"
+              action="school.profesor_action_window"/>
+<!--    <menuitem name="Server to list" id="school" parent="school.menu_2"
               action="school.action_server"/>
 -->
   </data>
