@@ -29,7 +29,6 @@
             <field name="salary"/>
             <field name="status"/>
             <field name="grade"/>
-            <field name="student"/>
           </group>  
         </form>
       </field>
@@ -58,7 +57,7 @@
         <form>
           <group>
             <field name="name"/>
-            
+            <field name="profesor"/>            
             <!-- <field name="age"/>
             <field name="bornDate"/>
             <field name="salary"/>
