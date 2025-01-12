@@ -12,6 +12,19 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="school.profesor_form">
+      <field name="name">school profesor form</field>
+      <field name="model">school.profesor</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="description"/>
+            <field name="age"/>
+          </group>  
+        </form>
+      </field>
+    </record>
 
     <!-- actions opening views on models -->
 
@@ -44,7 +57,7 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Administracion" id="school.profesor_menu_1" parent="school.menu_root"/>
+    <menuitem name="Administration" id="school.profesor_menu_1" parent="school.menu_root"/>
 <!--    <menuitem name="Menu 2" id="school.menu_2" parent="school.menu_root"/>
 -->
     <!-- actions -->
