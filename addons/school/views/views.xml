@@ -29,6 +29,7 @@
             <field name="salary"/>
             <field name="status"/>
             <field name="grade"/>
+            <field name="student"/>
           </group>  
         </form>
       </field>
@@ -47,6 +48,24 @@
           <field name="status"/>
           <field name="grade"/>-->
         </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="school.student_form">
+      <field name="name">school student form</field>
+      <field name="model">school.student</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            
+            <!-- <field name="age"/>
+            <field name="bornDate"/>
+            <field name="salary"/>
+            <field name="status"/>
+            <field name="grade"/> -->
+          </group>  
+        </form>
       </field>
     </record>
 

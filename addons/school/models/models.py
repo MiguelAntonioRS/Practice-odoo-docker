@@ -21,6 +21,7 @@ class Profesor(models.Model):
         default="universidad",
         required=True,
     )
+    student = fields.Many2one("school.student")
     
 class Student(models.Model):
     _name = 'school.student'
