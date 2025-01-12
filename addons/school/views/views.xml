@@ -40,11 +40,11 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="school" id="school.menu_root"/>
+    <menuitem name="School" id="school.menu_root"/>
 
     <!-- menu categories -->
 
-    <menuitem name="school" id="school.profesor_menu_1" parent="school.menu_root"/>
+    <menuitem name="Administracion" id="school.profesor_menu_1" parent="school.menu_root"/>
 <!--    <menuitem name="Menu 2" id="school.menu_2" parent="school.menu_root"/>
 -->
     <!-- actions -->
