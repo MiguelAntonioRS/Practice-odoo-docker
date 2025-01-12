@@ -13,3 +13,17 @@ class Profesor(models.Model):
     bornDate = fields.Date(string="Birthdate")
     salary = fields.Float()
     status = fields.Boolean()
+    grade = fields.Selection(
+        [
+            ('universidad','Universidad'),
+            ('maestria','Maestria'),            
+        ],
+        default="universidad",
+        required=True,
+    )
+    
+class Student(models.Model):
+    _name = 'school.student'
+    _description = 'student'
+
+    name = fields.Char(required=True)
