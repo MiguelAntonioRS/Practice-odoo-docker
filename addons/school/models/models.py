@@ -10,3 +10,6 @@ class Profesor(models.Model):
     name = fields.Char(required=True)
     description = fields.Text()
     age = fields.Integer(required=True)
+    bornDate = fields.Date(string="Birthdate")
+    salary = fields.Float()
+    status = fields.Boolean()
