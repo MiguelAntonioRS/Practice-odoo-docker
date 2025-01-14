@@ -29,6 +29,7 @@
             <field name="salary"/>
             <field name="status"/>
             <field name="grade"/>
+            <field name="student"/>
           </group>  
         </form>
       </field>
