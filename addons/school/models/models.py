@@ -21,7 +21,7 @@ class Profesor(models.Model):
         default="universidad",
         required=True,
     )
-    
+    student = fields.One2many("school.profesor", inverse_name="profesor")
     
 class Student(models.Model):
     _name = 'school.student'
