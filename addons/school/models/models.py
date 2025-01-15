@@ -32,6 +32,6 @@ class Student(models.Model):
     
 class Signature(models.Model):
     _name = 'school.signature'
-    _description = 'student'
+    _description = 'signature'
 
     name = fields.Char(required=True)
