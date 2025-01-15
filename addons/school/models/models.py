@@ -29,3 +29,9 @@ class Student(models.Model):
 
     name = fields.Char(required=True)
     profesor = fields.Many2one("school.profesor")
+    
+class Signature(models.Model):
+    _name = 'school.signature'
+    _description = 'student'
+
+    name = fields.Char(required=True)
