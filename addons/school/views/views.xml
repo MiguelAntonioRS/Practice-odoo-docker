@@ -83,6 +83,11 @@
       <field name="view_mode">tree,form</field>
     </record>
 
+    <record model="ir.actions.act_window" id="school.signature_action_window">
+      <field name="name">school signature window</field>
+      <field name="res_model">school.signature</field>
+      <field name="view_mode">tree,form</field>
+    </record>
 
     <!-- server action to the one above -->
 <!--
@@ -114,7 +119,9 @@
     <menuitem name="Profesor" id="school.profesor_menu_1_list" parent="school.profesor_menu_1"
               action="school.profesor_action_window"/>
     <menuitem name="Student" id="school.student_menu_1_list" parent="school.profesor_menu_1"
-              action="school.student_action_window"/>          
+              action="school.student_action_window"/>  
+    <menuitem name="Signature" id="school.signature_menu_1_list" parent="school.profesor_menu_1"
+              action="school.signature_action_window"/>                    
 <!--    <menuitem name="Server to list" id="school" parent="school.menu_2"
               action="school.action_server"/>
 -->
