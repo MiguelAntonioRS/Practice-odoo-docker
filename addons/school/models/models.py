@@ -22,7 +22,7 @@ class Profesor(models.Model):
         required=True,
     )
     student = fields.One2many("school.student", inverse_name="profesor", string="Student")
-    signature = fields.Many2many(model_name="school.signature", relation_name="schools.signatures"
+    signature = fields.Many2many(comodel_name="school.signature", relation_name="schools.signatures"
                                  column1="school_id", column2="signature_id")
     
 class Student(models.Model):
