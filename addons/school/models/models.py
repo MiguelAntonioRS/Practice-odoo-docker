@@ -37,3 +37,5 @@ class Signature(models.Model):
     _description = 'signature'
 
     name = fields.Char(required=True)
+    profesor = fields.Many2many(comodel_name="school.profesor", relation_name="schools_signatures",
+                                 column1="signature_id", column2="school_id",)
