@@ -30,6 +30,7 @@
             <field name="status"/>
             <field name="grade"/>
             <field name="student"/>
+            <field name="signature"/>
           </group>  
         </form>
       </field>
