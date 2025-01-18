@@ -1,0 +1,21 @@
+<odoo>
+    <!-- Definición del reporte -->
+    <report
+        id="action_contact_report"
+        model="res.partner"
+        string="Reporte de Contacto"
+        report_type="qweb-pdf"
+        name="contact_report.contact_report_template"
+        file="contact_report.contact_report_template"
+    />
+    
+    <!-- Enlace al menú de impresión -->
+    <record id="action_contact_report_print" model="ir.actions.report">
+        <field name="name">Reporte de Contacto</field>
+        <field name="model">res.partner</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">contact_report.contact_report_template</field>
+        <field name="binding_model_id" ref="base.model_res_partner"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>
