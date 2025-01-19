@@ -6,8 +6,8 @@
         string="Reporte de Contacto"
         report_type="qweb-pdf"
         name="contact_report.contact_report_template"
-        file="contact_report.contact_report_template"
     />
+
     
     <!-- Enlace al menú de impresión -->
     <record id="action_contact_report_print" model="ir.actions.report">
