@@ -1,14 +1,14 @@
 {
-    'name': "Reporte PDF contacto",
-    'version': "1.0",
-    'category': "Custom",
-    'author': "OpenCode",
+    'name': 'Contact PDF Export',
+    'version': '1.0',
+    'summary': 'Store contact details and export them to PDF',
+    'author': 'Tu Nombre',
+    'category': 'Tools',
     'depends': ['base'],
     'data': [
-        'views/report_action.xml',
-        'report/contact_report_template.xml',
+        'views/contact_views.xml',
+        'report/contact_report.xml',
     ],
     'installable': True,
-    'application': False,
-    'license': 'LGPL-3',
+    'application': True,
 }
