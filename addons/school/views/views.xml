@@ -60,6 +60,7 @@
           <group>
             <field name="name"/>
             <field name="profesor"/>            
+            <field name="notes_id"/>
             <!-- <field name="age"/>
             <field name="bornDate"/>
             <field name="salary"/>

@@ -31,6 +31,7 @@ class Student(models.Model):
 
     name = fields.Char(required=True)
     profesor = fields.Many2one("school.profesor")
+    notes_id = fields.One2many("school.note", "student_id")
     
 class Signature(models.Model):
     _name = 'school.signature'
