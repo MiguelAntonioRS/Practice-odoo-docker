@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models,fields
+from odoo import models, fields, api
 
 
 class Profesor(models.Model):
@@ -48,3 +48,12 @@ class Note(models.Model):
     student_id = fields.Many2one("school.student", string="Student", required=True)
     signature_id = fields.Many2one("school.signature", string="Signature", required=True)
     note = fields.Float(string="Note")
+    status = fields.Char(string="Status", compute="_compute_status")
+    
+    @api.depends("note")
+    def _compute_status(self):
+        for record in self:
+            if record.note >= 6.0:
+                record.status = "Won"
+            else:
+                record.status = "Loss"    

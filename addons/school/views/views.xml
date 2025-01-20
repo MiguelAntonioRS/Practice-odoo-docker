@@ -72,6 +72,7 @@
           <field name="student_id"/>
           <field name="signature_id"/>
           <field name="note"/>
+          <field name="status"/>
         </tree>
       </field>
     </record>
@@ -93,6 +94,12 @@
     <record model="ir.actions.act_window" id="school.signature_action_window">
       <field name="name">school signature window</field>
       <field name="res_model">school.signature</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="school.note_action_window">
+      <field name="name">school note window</field>
+      <field name="res_model">school.note</field>
       <field name="view_mode">tree,form</field>
     </record>
 
