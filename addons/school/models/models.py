@@ -39,3 +39,11 @@ class Signature(models.Model):
     name = fields.Char(required=True)
     profesor = fields.Many2many(comodel_name="school.profesor", relation_name="schools_signatures",
                                  column1="signature_id", column2="school_id",)
+    
+class Note(models.Model):
+    _name = 'school.note'
+    _description = 'Note'
+
+    student_id = fields.Many2one("school.student", string="Student", required=True)
+    signature_id = fields.Many2one("school.signature", string="Signature", required=True)
+    note = fields.Float(string="Note")
