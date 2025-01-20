@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_school_profesor,school.profesor,model_school_profesor,base.group_user,1,1,1,1
 access_school_student,school.student,model_school_student,base.group_user,1,1,1,1
 access_school_signature,school.signature,model_school_signature,base.group_user,1,1,1,1
+access_school_note,school.note,model_school_note,base.group_user,1,1,1,1
