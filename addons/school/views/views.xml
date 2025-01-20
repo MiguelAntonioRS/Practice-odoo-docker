@@ -44,10 +44,6 @@
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <!--<field name="age"/>
-          <field name="salary"/>
-          <field name="status"/>
-          <field name="grade"/>-->
         </tree>
       </field>
     </record>
@@ -61,13 +57,22 @@
             <field name="name"/>
             <field name="profesor"/>            
             <field name="notes_id"/>
-            <!-- <field name="age"/>
-            <field name="bornDate"/>
-            <field name="salary"/>
-            <field name="status"/>
-            <field name="grade"/> -->
           </group>  
         </form>
+      </field>
+    </record>
+
+    <!--Note-->
+
+    <record model="ir.ui.view" id="school.note_list">
+      <field name="name">school note list</field>
+      <field name="model">school.note</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="student_id"/>
+          <field name="signature_id"/>
+          <field name="note"/>
+        </tree>
       </field>
     </record>
 
