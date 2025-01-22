@@ -8,6 +8,7 @@ class Profesor(models.Model):
     _description = 'profesor'
 
     name = fields.Char(required=True)
+    photograph = fields.Binary()
     description = fields.Text()
     age = fields.Integer(required=True)
     bornDate = fields.Date(string="Birthdate")

@@ -21,7 +21,8 @@
       <field name="model">school.profesor</field>
       <field name="arch" type="xml">
         <form>
-          <group>
+          <group>photograph
+            <field name="photograph"/>
             <field name="name"/>
             <field name="description"/>
             <field name="age"/>
