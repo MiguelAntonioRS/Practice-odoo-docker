@@ -22,7 +22,7 @@
       <field name="arch" type="xml">
         <form>
           <group>photograph
-            <field name="photograph"/>
+            <field name="photograph" widget="image" option="{'size':(30, 30)}"/>
             <field name="name"/>
             <field name="description"/>
             <field name="age"/>
