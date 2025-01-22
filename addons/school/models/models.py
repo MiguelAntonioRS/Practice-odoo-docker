@@ -40,7 +40,13 @@ class Signature(models.Model):
     name = fields.Char(required=True)
     profesor = fields.Many2many(comodel_name="school.profesor", relation_name="schools_signatures",
                                  column1="signature_id", column2="school_id",)
-    notes_id = fields.One2many("school.note", "signature_id")
+    notes_ids = fields.One2many("school.note", "signature_id", string="Notes")
+    students_ids = fields.Many2many("school.student", string="Students", compute="_compute_student_id")
+    
+    @api.depends("notes_ids", "notes_ids.student_id")
+    def _compute_student_id(self):
+        for signature in self:
+            signature.students_ids = signature.notes_ids.mapped("student_id")
     
 class Note(models.Model):
     _name = 'school.note'
