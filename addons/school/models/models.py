@@ -40,6 +40,7 @@ class Signature(models.Model):
     name = fields.Char(required=True)
     profesor = fields.Many2many(comodel_name="school.profesor", relation_name="schools_signatures",
                                  column1="signature_id", column2="school_id",)
+    notes_id = fields.One2many("school.note", "signature_id")
     
 class Note(models.Model):
     _name = 'school.note'
