@@ -21,25 +21,37 @@
       <field name="model">school.profesor</field>
       <field name="arch" type="xml">
         <form>
-          <div class="modal-content" style="box-shadow 0px 0px 9px 0px #888888; opacity: 0.9; padding: 20px">
-            <group>
+          <notebook>
+            <page string="General Data">
+              <div class="modal-content" style="box-shadow 0px 0px 9px 0px #888888; opacity: 0.9; padding: 20px">
                 <group>
-                  <field name="photograph" widget="image" options="{'size':(75, 75)}"/>
-                  <field name="name"/>
-                  <field name="description"/>
-                  <field name="age"/>
-                  <field name="bornDate"/>
-                </group>
+                  <group>
+                    <field name="photograph" widget="image" options="{'size':(75, 75)}"/>
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="age"/>
+                    <field name="bornDate"/>
+                  </group>
 
+                  <group>
+                    <field name="salary"/>
+                    <field name="status"/>
+                    <field name="grade"/>
+                    <field name="signature" widget="many2many_tags"/>
+                  </group>
+                </group>  
+              </div>
+            </page>
+              
+            <page string="Student List">
+              <div class="modal-content" style="box-shadow 0px 0px 9px 0px #888888; opacity: 0.9; padding: 20px">
                 <group>
-                  <field name="salary"/>
-                  <field name="status"/>
-                  <field name="grade"/>
-                  <field name="student"/>
-                  <field name="signature" widget="many2many_tags"/>
-                </group>
-            </group>  
-          </div>
+                  <field name="student"/>           
+                </group>  
+              </div>
+            </page>
+
+          </notebook>
         </form>
       </field>
     </record>
