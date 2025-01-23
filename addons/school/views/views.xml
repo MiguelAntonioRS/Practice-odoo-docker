@@ -44,10 +44,9 @@
             </page>
               
             <page string="Student List">
-              <div class="modal-content" style="box-shadow 0px 0px 9px 0px #888888; opacity: 0.9; padding: 20px">
-                <group>
+                <tree>
                   <field name="student"/>           
-                </group>  
+                </tree>  
               </div>
             </page>
 
