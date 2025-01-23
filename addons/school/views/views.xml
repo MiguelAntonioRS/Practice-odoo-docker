@@ -21,17 +21,22 @@
       <field name="model">school.profesor</field>
       <field name="arch" type="xml">
         <form>
-          <group>photograph
-            <field name="photograph" widget="image" options="{'size':(75, 75)}"/>
-            <field name="name"/>
-            <field name="description"/>
-            <field name="age"/>
-            <field name="bornDate"/>
-            <field name="salary"/>
-            <field name="status"/>
-            <field name="grade"/>
-            <field name="student"/>
-            <field name="signature"/>
+          <group>
+              <group>
+                <field name="photograph" widget="image" options="{'size':(75, 75)}"/>
+                <field name="name"/>
+                <field name="description"/>
+                <field name="age"/>
+                <field name="bornDate"/>
+              </group>
+
+              <group>
+                <field name="salary"/>
+                <field name="status"/>
+                <field name="grade"/>
+                <field name="student"/>
+                <field name="signature"/>
+              </group>
           </group>  
         </form>
       </field>
