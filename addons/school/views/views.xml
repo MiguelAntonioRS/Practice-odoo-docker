@@ -46,8 +46,7 @@
             <page string="Student List">
                 <tree>
                   <field name="student"/>           
-                </tree>  
-              </div>
+                </tree>
             </page>
 
           </notebook>
