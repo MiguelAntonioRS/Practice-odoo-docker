@@ -58,11 +58,11 @@
       <field name="model">school.profesor</field>
       <field name="arch" type="xml">
         <kanban>
-          <templates>
-            <t>
+          <templantes>
+            <t t-name="kanban-box">
               
             </t>
-          </templates>  
+          </templantes>  
         </kanban>
       </field>
     </record>
