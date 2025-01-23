@@ -48,7 +48,6 @@
                   <field name="student"/>           
                 </tree>
             </page>
-
           </notebook>
         </form>
       </field>
@@ -100,7 +99,7 @@
     <record model="ir.actions.act_window" id="school.profesor_action_window">
       <field name="name">school profesor window</field>
       <field name="res_model">school.profesor</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record model="ir.actions.act_window" id="school.student_action_window">
