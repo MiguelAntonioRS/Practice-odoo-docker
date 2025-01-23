@@ -53,6 +53,20 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="school.profesor_kanban">
+      <field name="name">school profesor kanban</field>
+      <field name="model">school.profesor</field>
+      <field name="arch" type="xml">
+        <kanban>
+          <templates>
+            <t>
+              
+            </t>
+          </templates>  
+        </kanban>
+      </field>
+    </record>
+
     <!--Student-->
 
     <record model="ir.ui.view" id="school.student_list">
