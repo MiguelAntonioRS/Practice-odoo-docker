@@ -21,7 +21,7 @@
       <field name="model">school.profesor</field>
       <field name="arch" type="xml">
         <form>
-          <div class="model-content" style="box-shadow 0px 0px 10px 0px #888888; opacity: 0.7; padding: 20px">
+          <div class="modal-content" style="box-shadow 0px 0px 9px 0px #888888; opacity: 0.9; padding: 20px">
             <group>
                 <group>
                   <field name="photograph" widget="image" options="{'size':(75, 75)}"/>
