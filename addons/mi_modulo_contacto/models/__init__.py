@@ -1,1 +1,1 @@
-from . import res_partner.py
+from . import res_partner
