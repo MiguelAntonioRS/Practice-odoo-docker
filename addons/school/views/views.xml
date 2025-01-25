@@ -60,7 +60,11 @@
         <kanban>
           <templantes>
             <t t-name="kanban-box">
-              
+              <div class="oe_kanban_global_click card">
+                <div class="card-body">
+                  <field name="name"/>
+                </div>
+              </div>
             </t>
           </templantes>  
         </kanban>
