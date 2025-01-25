@@ -61,8 +61,16 @@
           <templantes>
             <t t-name="kanban-box">
               <div class="oe_kanban_global_click card">
+              <div class="card-header d-flex justify-content-between aling-items-center">
+                  <strong class="text-primary">
+                    Name: <field name="name"/>  
+                  </strong>
+                </div>
                 <div class="card-body">
-                  <field name="name"/>
+                  <field name="age"/>
+                  <field name="salary"/>
+                  <field name="status"/>
+                  <field name="grade"/>
                 </div>
               </div>
             </t>
