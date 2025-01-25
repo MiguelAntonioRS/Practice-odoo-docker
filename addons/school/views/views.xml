@@ -67,10 +67,22 @@
                   </strong>
                 </div>
                 <div class="card-body">
-                  <field name="age"/>
-                  <field name="salary"/>
-                  <field name="status"/>
-                  <field name="grade"/> 
+
+                  <div class="mt-2">
+                    <field name="age"/>    
+                  </div>
+
+                  <div class="mt-2">
+                    <field name="salary"/>    
+                  </div>
+
+                  <div class="mt-2">
+                    <field name="status"/>
+                  </div>
+
+                  <div class="mt-2">
+                    <field name="grade"/>
+                  </div> 
                 </div>
               </div>
             </t>
