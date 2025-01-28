@@ -1,0 +1,16 @@
+<odoo>
+    <data noupdate="1">
+        <record id="book_demo_1" model="library.book">
+            <field name="name">The Catcher in the Rye</field>
+            <field name="isbn">978-0-316-76948-0</field>
+            <field name="author">J.D. Salinger</field>
+            <field name="publication_date">1951-07-16</field>
+        </record>
+        <record id="book_demo_2" model="library.book">
+            <field name="name">To Kill a Mockingbird</field>
+            <field name="isbn">978-0-06-112008-4</field>
+            <field name="author">Harper Lee</field>
+            <field name="publication_date">1960-07-11</field>
+        </record>
+    </data>
+</odoo>

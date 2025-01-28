@@ -28,14 +28,15 @@
             </form>
         </field>
     </record>
-
-    <menuitem id="menu_library_root" name="Library"/>
-    <menuitem id="menu_library_books" name="Books" parent="menu_library_root"/>
-    <menuitem id="menu_library_book_list" name="Books List" parent="menu_library_books" action="action_library_books"/>
-
+    
     <record id="action_library_books" model="ir.actions.act_window">
         <field name="name">Books</field>
         <field name="res_model">library.book</field>
         <field name="view_mode">tree,form</field>
     </record>
+
+    <menuitem id="menu_library_root" name="Library"/>
+    <menuitem id="menu_library_books" name="Books" parent="menu_library_root"/>
+    <menuitem id="menu_library_book_list" name="Books List" parent="menu_library_books" action="action_library_books"/>
+
 </odoo>
