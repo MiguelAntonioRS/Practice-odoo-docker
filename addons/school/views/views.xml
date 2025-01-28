@@ -88,7 +88,7 @@
                   </div> 
                 </div>
                 <div class="card-footer">
-                  <strong>Status</strong>
+                  <strong class="text-info me-2">Status: </strong>
                   <i class="fa fa-rocket me-2"></i>
                   <field name="status"/>
                 </div>
