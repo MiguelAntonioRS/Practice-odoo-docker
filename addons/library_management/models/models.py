@@ -1,18 +1,13 @@
-# -*- coding: utf-8 -*-
+from odoo import models, fields, api
 
-# from odoo import models, fields, api
+class LibraryBook(models.Model):
+    _name = 'library.book'
+    _description = 'Library Book'
+    _sql_constraints = [
+        ('isbn_unique', 'unique(isbn)', 'The ISBN must be unique!')
+    ]
 
-
-# class library_management(models.Model):
-#     _name = 'library_management.library_management'
-#     _description = 'library_management.library_management'
-
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+    name = fields.Char(string='Book Name', required=True)
+    isbn = fields.Char(string='ISBN', required=True)
+    author = fields.Char(string='Author')
+    publication_date = fields.Date(string='Publication Date')
