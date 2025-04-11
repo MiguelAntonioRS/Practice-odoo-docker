@@ -3,7 +3,7 @@
 * Tener instalado docker y docker-compose
 
 ### Pasos
-1. Duplicar y renombrar: 
+1. Duplicar y renombrar:
     * Duplicar copy.odoo-postgres.docker-compose.yaml y renombrar la copia con el nombre docker-compose.yaml.
     * Duplicar copy.env y renombrar la copia con el nombre .env.
     * Duplicar odoo.conf.copy y renombrar la copia con el nombre odoo.conf.
